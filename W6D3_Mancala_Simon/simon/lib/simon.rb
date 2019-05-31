@@ -1,3 +1,4 @@
+require 'byebug'
 class Simon
   COLORS = %w(red blue green yellow)
 
@@ -47,9 +48,10 @@ class Simon
 
   def reset_game
     @sequence_length = 1
-    # self.game_over=(false) but this works? ask about seq_length as well?
+    # self.game_over=(false) # but this works? ask about seq_length as well?
     # game_over = false why doesn't this work?
     @game_over = false
+    # debugger
     @seq = []
     #
   end
